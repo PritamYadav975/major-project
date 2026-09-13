@@ -18,6 +18,35 @@
      padding:0.5rem 3rem 0.5rem 3rem;
      font-size:1rem;
   }
+  @media (max-width: 767px) {
+    .search-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .search-form {
+        width: 100%;
+    }
+
+    .search-inp {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+    }
+
+    .search-btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 14px;
+    }
+}
+.navbar {
+    background-color: white !important;
+    z-index: 1000;
+}
+
+.navbar-collapse {
+    background-color: white !important;
+}
+
 </style>
 
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
@@ -35,8 +64,8 @@
       <div class="navbar-nav">
         <a class="nav-link" href="/listings">Explore</a>
       </div>
-      <div class="navbar-nav ms-auto">
-          <form method="GET" action="/listings/search" class="d-flex" role="search">
+      <div class="navbar-nav ms-auto search-container">
+          <form method="GET" action="/listings/search" class="d-flex search-form" role="search">
           <input required class="form-control me-2 search-inp" type="text" name="country" placeholder="Search By Country"/>
           <button class="btn search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
     </form>
