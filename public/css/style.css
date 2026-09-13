@@ -75,7 +75,7 @@ body{
     width:100% !important;
     object-fit:cover !important;
 }
-.card body{
+.card-body{
    padding:0 !important;
 }
 .card-text p{
@@ -113,3 +113,182 @@ body{
    padding-left: 0;
    padding-right:0;
 }
+
+/*for mobile screen*/
+
+@media (max-width: 767px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        height: auto;
+        min-height: 5rem;
+        background-color: #fff !important;
+        padding: 0.7rem 1rem;
+        z-index: 1000;
+    }
+
+    .navbar-collapse {
+        background-color: #fff !important;
+        padding: 0.5rem 0;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 0.6rem 0 !important;
+    }
+
+
+    /* SEARCH BAR */
+
+    .navbar-nav.ms-auto {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    .navbar-nav.ms-auto form {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .search-inp {
+        flex: 1;
+        min-width: 0;
+        width: 0;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .search-btn {
+        flex-shrink: 0;
+        white-space: nowrap;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+
+    /* CATEGORY FILTERS */
+
+    #filters {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        gap: 0.5rem;
+        padding-bottom: 5px;
+
+        /* Prevent scrollbar from taking too much space */
+        scrollbar-width: thin;
+    }
+
+    .filter {
+        flex: 0 0 auto;
+        margin-right: 1rem;
+        margin-top: 0.7rem;
+    }
+
+    .filter p {
+        font-size: 0.65rem;
+        margin-bottom: 0;
+    }
+
+
+    /*TAX TOGGLE */
+
+    .tax-toggle {
+        width: auto;
+        height: 0.1rem;
+        margin-left: auto;
+        margin-right: 10px;
+        margin-top: 0.4rem;
+    }
+
+    .tax-toggle .form-check-label {
+        font-size: 12px;
+    }
+
+    .tax-toggle .form-check-input {
+        flex-shrink: 0;
+    }
+
+    /* LISTING CARDS */
+
+    .listing-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .card-img-top {
+        width: 100% !important;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover !important;
+    }
+
+    .card-body {
+        padding: 0.5rem 0.2rem !important;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+
+    /*SHOW PAGE */
+
+    .show-img {
+        height: auto;
+        max-height: 350px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .show-card {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    /* MAP */
+
+    #map {
+        width: 100%;
+        height: 300px;
+    }
+
+
+    /* FOOTER  */
+
+    .f-info {
+        height: auto;
+        min-height: 8rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .f-info-links,
+    .f-info-socials,
+    .f-info-brand {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .f-info-socials i {
+        font-size: 1rem;
+        margin-right: 0.7rem;
+    }
+}
+
+
+
+

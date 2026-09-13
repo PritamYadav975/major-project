@@ -195,3 +195,10 @@
   -webkit-transition: background-position .7s;
   transition: background-position .7s;
 }
+@media (max-width: 600px) {
+    .starability-result {
+        transform: scale(0.7);
+        transform-origin: left center;
+        margin-right: -45px;
+    }
+}
